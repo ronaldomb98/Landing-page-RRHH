@@ -23,6 +23,7 @@ export class HeaderComponent {
 
   public readonly navOptions: NavOption[] = [
     new NavOption('Inicio', '/'),
+    new NavOption('Contenido', '/content')
   ];
 
 }
