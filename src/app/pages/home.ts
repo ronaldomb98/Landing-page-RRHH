@@ -3,7 +3,13 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'heroga-home',
     template: `
+    <div class="intro vh-100 mb-4">
+      <div class="d-flex h-100">
+        <h1 class="mx-auto align-self-center">Reclutamiento y selección</h1>
+      </div>
+    </div>
     <div class="container">
+    <h2 class="text-center py-3 mb-3">CIPAS</h2>
     <div class="row mb-2">
     <div class="col-md-6" [ngClass]="isLast ? 'offset-md-3' : ''" *ngFor="let item of members; last as isLast">
       <div class="row shadow no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
