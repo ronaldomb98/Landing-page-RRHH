@@ -3,16 +3,138 @@
 @import "~bootstrap/scss/bootstrap";
 
 .intro {
-    min-height: 30rem;
-    position: relative;
-    display: table;
-    width: 100%;
-    height: 100%;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.1)),to(rgba(255,255,255,.1))),url(/assets/bg-masthead.jpg);
-    background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(/assets/bg-masthead.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	min-height: 30rem;
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100%;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	background: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, .1)),
+			to(rgba(255, 255, 255, .1))
+		),
+		url(/assets/bg-masthead.jpg);
+	background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%),
+		url(/assets/bg-masthead.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.callout {
+	background: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, .1)),
+			to(rgba(255, 255, 255, .1))
+		),
+		url(assets/bg-callout.jpg);
+	background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%),
+		url(assets/bg-callout.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portfolio2 {
+	background: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, .1)),
+			to(rgba(255, 255, 255, .1))
+		),
+		url(assets/portfolio-2.jpg);
+	background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%),
+		url(assets/portfolio-2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portfolio1 {
+	background: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, .1)),
+			to(rgba(255, 255, 255, .1))
+		),
+		url(assets/portfolio-1.jpg);
+	background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%),
+		url(assets/portfolio-1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portfolio3 {
+	background: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, .1)),
+			to(rgba(255, 255, 255, .1))
+		),
+		url(assets/portfolio-3.jpg);
+	background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%),
+		url(assets/portfolio-3.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.vh-50 {
+	height: 50vh;
+}
+
+.main-title {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+body {
+	font-family: 'Source Sans Pro';
+}
+
+h2 {
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+heroga-content {
+	h3 {
+		font-size: 3rem;
+		font-weight: 700;
+		border-bottom: solid 2px;
+		border-bottom-color: #184b5b;
+		padding: 2rem 2rem;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		background-color: #184b5b;
+		color: white;
+	}
+
+	h1 {
+		font-size: 5rem;
+		font-weight: 700;
+	}
+
+	.bg-primary {
+		background-color: #184b5b !important;
+	}
+
+	.list-group-item {
+		border-color: white;
+	}
+}
+
+.route-active {
+    text-decoration: underline;
+    font-weight: 600
 }

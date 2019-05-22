@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import Home from './pages/home';
 import Content from './pages/content';
+import Recruit from './pages/recruit';
+import Game from './pages/game';
+import Question from './pages/question';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: Home,
   },
   {
@@ -13,8 +16,20 @@ export const routes: Routes = [
     component: Content
   },
   {
+    path: 'recruit',
+    component: Recruit
+  },
+  {
+    path: 'game',
+    component: Game
+  },
+  {
+    path: 'question',
+    component: Question
+  },
+  {
     path: '**',
-    redirectTo: ''
+    redirectTo: 'home'
   }
 ];
 

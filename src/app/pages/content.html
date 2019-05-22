@@ -1,0 +1,215 @@
+<div class="vh-50 w-100 d-flex callout">
+    <div class=" text-center w-100 align-self-center">
+        <h2 class="">RECLUTAMIENTO Y SELECCIÓN</h2>
+    </div>
+</div>
+
+<div class="vh-100 w-100 container d-flex container">
+    <div class="align-self-center">
+        <h3 class="mb-5 text-center">Conceptos clave</h3>
+        <ng-container *ngFor="let item of concepts">
+            <ng-container *ngTemplateOutlet="customCard; context: {item: item}" ></ng-container>
+        </ng-container>
+    </div>
+</div>
+
+<div class="vh-100 w-100 bg-primary">
+    <div class="container d-flex justify-content-end h-100">
+        <div class="align-self-center">
+            <h3 class="mb-5 text-center text-white">Aspectos importantes a tener en cuenta</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-white bg-transparent">Fuentes y medios de reclutamiento</li>
+                <li class="list-group-item text-white bg-transparent">Fines del reclutamiento</li>
+                <li class="list-group-item text-white bg-transparent">Proceso de reclutamiento y selección de personal</li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+<div class="vh-100 w-100 container d-flex">
+    <div class="align-self-center">
+        <h3 class="mb-5 text-center">Aspectos importantes a tener en cuenta</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let item of dataToHaveInMind">{{item}}</li>
+        </ul>
+    </div>
+</div>
+
+<div class="vh-100 w-100 portfolio2">
+    <div class="container h-100 d-flex justify-content-end ">
+        <div class="align-self-center">
+            <h3 class="mb-5 text-center text-white">Pasos para reclutar al personal</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-white bg-transparent" *ngFor="let item of steptsForRecruiting">{{item}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="vh-50 w-100 d-flex callout">
+    <div class=" text-center w-100 align-self-center">
+        <h2 class="">REDES SOCIALES</h2>
+    </div>
+</div>
+
+<div class="vh-100 w-100 container d-flex">
+    <div class="align-self-center">
+        <h3 class="mb-5 text-center">Conceptos clave de redes sociales</h3>
+        <ng-container *ngFor="let item of socialNetworkConcepts">
+            <ng-container *ngTemplateOutlet="customCard; context: {item: item}" ></ng-container>
+        </ng-container>
+    </div>
+</div>
+
+
+
+<div class="vh-100 w-100 portfolio1">
+    <div class="container d-flex h-100 w-100">
+        <div class="align-self-center">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h3 class="display-4">Uso de redes sociales para reclutamiento</h3>
+                    <hr class="my-4">
+                    <p class="lead">En un estudio realizado por Deloitte(2009), se identificó que 23\% de las empresas ya estaban utilizando las redes sociales en su proceso de reclutamiento y selección(IPADE,2012)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="vh-100 w-100 container d-flex">
+    <ng-container *ngTemplateOutlet="labelAndDefinition; context: {items: usersOnSocialNetworks, title: 'Usuarios en redes sociales'}"></ng-container>
+</div>
+
+<div class="vh-100 w-100 portfolio3">
+    <div class="container d-flex justify-content-end h-100 w-100">
+        <div class="align-self-center">
+            <h3 class="mb-5 text-center">Redes sociales</h3>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h3>Ventajas</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" *ngFor="let item of socialNetworkAdventages">{{item}}</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3>Desventajas</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" *ngFor="let item of socialNetworkDisAdventages">{{item}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="vh-100 w-100 container d-flex">
+    <ng-container *ngTemplateOutlet="labelAndDefinition; context: {items: usersOnSocialNetworks, title: 'Clasificación de redes sociales'}"></ng-container>
+</div>
+
+<div class="vh-50 w-100 d-flex callout">
+    <div class=" text-center w-100 align-self-center">
+        <h2 class="">TECNOLOGÍA E INTERNET</h2>
+    </div>
+</div>
+
+<div class="vh-100 w-100 container d-flex">
+    <div class="align-self-center">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h3 class="display-4">Herramientas  de tecnología e internet</h3>
+                <p class="lead">
+                    A partir del año 2003, surge un nuevo escenario para la función de RRHH, permitiendo la entrada al llamado reclutamiento de personal 2.0, modalidad innovadora para encontrar a los candidatos a través de las redes sociales.
+                </p>
+                <hr class="my-4">
+                <ul>
+                    <li>LinkedIn - Red de profesionales más grande del mundo.</li>
+                    <li>Páginas específicas</li>
+                    <li>Bolsas de empleo</li>
+                    <li>Portales - Los más usados. Zona Jobs - portal de empleo de alcance Colombia, Ecuador, Colombia, Chile, entre otros.</li>
+                </ul>
+                <p class="lead">
+                    La networking es una de las fuentes de reclutamiento con mayor crecimiento, expansión y aceptación en la sociedad, a través de las redes sociales para negocios (Rico, 2015)
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="vh-100 w-100 container d-flex justify-content-end">
+    <div class="align-self-center">
+        <h3 class="mb-5 text-center">Herramientas para mejorar procesos y gestión de candidatos</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Correo electrónico, agenda de contactos, calendarios, etcétera.</li>
+            <li class="list-group-item">Gestión de proyectos, tareas y gestión del tiempo.</li>
+            <li class="list-group-item">Creación y/o participación en comunidades virtuales.</li>
+            <li class="list-group-item">Gestión y creación de grupos de trabajo, debate o distribución de información</li>
+            <li class="list-group-item">Manejar cuentas en las diferentes redes sociales como captación de talentos.</li>
+            <li class="list-group-item">Gestión de candidatos y seguimiento de procesos, entre otras</li>
+        </ul>
+    </div>
+</div>
+
+<div class="vh-100 w-100  bg-primary">
+    <div class="container d-flex h-100 justify-content-center">
+        <div class="align-self-center">
+            <div class="text-center">
+                <img class="w-75" src="assets/estadisticaReclutamientoRedesSociales.PNG" alt="estadisticas">
+            </div>
+            <p class="py-3 text-white">
+                la Asociación Mexicana de Internet (AMIPCI, 2014), estimó que 90 \% de los usuarios de internet en México usan las redes sociales. La evolución en usuarios de internet pasó de 20.2 millones del año 2006 a 53.9 millones en el 2014
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="vh-100 w-100 container d-flex justify-content-end">
+    <div class="align-self-center">
+        <h3 class="mb-5 text-center">Los usos de internet en RSP</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Como método de relutamieto</li>
+            <li class="list-group-item">Como medio de evaluación de candidatos a distancia</li>
+            <li class="list-group-item">Como forma de ejercer el c de los medios de evaluación por parte de los evaluadores.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="vh-100 w-100 portfolio2">
+    <div class="container d-flex h-100 w-100 ">
+        <div class="align-self-center text-white">
+            <h3 class="mb-5 text-center">Conclusiones</h3>
+            <p>
+                En México, los procesos de reclutamiento y selección de personal de manera tradicional siguen teniendo una alta aplicación, sin embargo, ante las grandes ventajas de las redes sociales se requiere utilizar las nuevas herramientas para el RSP, e implementar el e-recruitment, debido a la fuerte competencia para captar los talentos deseados.
+            </p>
+            <p>
+                Las tendencias sociales y demográficas de México y el mundo están marcando la diferencia en el uso de las herramientas tecnológicas, como es el caso de las generaciones baby-boom y los millenneals
+            </p>
+        </div>
+    </div>
+</div>
+
+<ng-template #customCard let-item="item">
+    <div class="card my-3">
+        <div class="card-header bg-primary text-white">
+            {{item.title}}
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>{{item.description}}</p>
+                <footer class="blockquote-footer">{{item.author}} <cite title="Source Title">{{item.date}}</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #labelAndDefinition let-items="items" let-title="title">
+    <div class="align-self-center">
+        <h3 class="mb-5 text-center">{{title}}</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let item of items">
+                <strong>{{item.label}}</strong> <span>{{item.definition}}</span>
+            </li>
+        </ul>
+    </div>
+</ng-template>
